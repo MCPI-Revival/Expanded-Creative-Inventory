@@ -713,6 +713,7 @@ void init_creative() {
         patch((void *) 0x8d090, nop_patch);
         patch((void *) 0x91d48, nop_patch);
         patch((void *) 0x92098, nop_patch);
+        patch((void *) 0x99010, nop_patch);
         unsigned char FillingContainer_removeResource_creative_check_patch[4] = {0x03, 0x00, 0x53, 0xe1}; // "cmp r3, r3"
         patch((void *) 0x923c0, FillingContainer_removeResource_creative_check_patch);
         patch((void *) 0x92828, nop_patch);
