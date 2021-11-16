@@ -697,7 +697,7 @@ void init_creative() {
     }
 
     // Remove Creative Restrictions (Opening Chests, Crafting, Etc)
-    if (feature_has("Remove Creative Mode Restrictions", 0)) {
+    if ((feature_has("Remove Creative Mode Restrictions", 0)) || (feature_has("Remove Creative Restrictions", 0))) {
         unsigned char nop_patch[4] = {0x00, 0xf0, 0x20, 0xe3}; // "nop"
         patch((void *) 0x1e3f4, nop_patch);
         unsigned char slot_count_patch[4] = {0x18, 0x00, 0x00, 0xea}; // "b 0x27110"
@@ -724,3 +724,4 @@ void init_creative() {
         is_restricted = 0;
     }
 }
+
