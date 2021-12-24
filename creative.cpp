@@ -56,6 +56,13 @@ static int32_t Inventory_setupDefault_FillingContainer_addItem_call_injection(un
     diamondSword_instance->auxiliary = 0;
     diamondSword_instance->id = 276;
     (*FillingContainer_addItem)(filling_container, diamondSword_instance);
+    
+    ItemInstance *diamondSword_instance = new ItemInstance;
+    ALLOC_CHECK(diamondSword_instance);
+    diamondSword_instance->count = 255;
+    diamondSword_instance->auxiliary = 0;
+    diamondSword_instance->id = 276;
+    (*FillingContainer_addItem)(filling_container, diamondSword_instance);
 
     ItemInstance *mushroomStew_instance = new ItemInstance;
     ALLOC_CHECK(mushroomStew_instance);
