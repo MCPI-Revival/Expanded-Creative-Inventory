@@ -49,14 +49,7 @@ static int32_t Inventory_setupDefault_FillingContainer_addItem_call_injection(un
     inventory_add_item(filling_container, *Tile_info_updateGame1, true);
     inventory_add_item(filling_container, *Tile_info_updateGame2, true);
 
-    // Add EVERYTHING
-    ItemInstance *diamondSword_instance = new ItemInstance;
-    ALLOC_CHECK(diamondSword_instance);
-    diamondSword_instance->count = 255;
-    diamondSword_instance->auxiliary = 0;
-    diamondSword_instance->id = 276;
-    (*FillingContainer_addItem)(filling_container, diamondSword_instance);
-    
+    // Add EVERYTHING    
     ItemInstance *diamondSword_instance = new ItemInstance;
     ALLOC_CHECK(diamondSword_instance);
     diamondSword_instance->count = 255;
