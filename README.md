@@ -1,4 +1,4 @@
-# MCPI-Better-Creative-Inventory
+# Expanded-Creative-Inventory
 This is a mod for [MCPI-Reborn](https://gitea.thebrokenrail.com/TheBrokenRail/minecraft-pi-reborn) that expands the "Expand Creative Inventory" mod even more, so that you have access to all items in the game.
 
 ## Using
